@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — Through Christ By Faith: A Non Profit Organization</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Through Christ By Faith: A Non Profit Organization — About. EIN 84-2101853. Founder Shane Bundy.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Through Christ By Faith: A Non Profit Organization logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container split">
+  <div>
+    <h1>About Through Christ By Faith</h1>
+    <p><strong>Through Christ By Faith: A Non Profit Organization</strong> is organized under California’s Nonprofit Public Benefit Corporation Law and operates for charitable purposes as a recognized <strong>501(c)(3)</strong> with EIN <strong>84-2101853</strong>.</p>
+    <p><em>Specific purpose:</em> provide to the homeless &amp; less fortunate, and empower girls &amp; women.</p>
+    <p><strong>Founder:</strong> Shane Bundy</p>
+    <ul class="small">
+      <li>No substantial part of our activities involves lobbying or political campaigning.</li>
+      <li>Assets are irrevocably dedicated to charitable purposes.</li>
+      <li>Upon dissolution, remaining assets go to a similar 501(c)(3).</li>
+    </ul>
+  </div>
+  <figure class="figure"><img src="images/about.jpg" alt="About our faith-driven mission"></figure>
+</main>
+
+<section class="section container grid-3">
+  <div class="card"><div class="card-body">
+    <strong>Address</strong>
+    <p class="small">25345 Woodcreek Ct, Moreno Valley, CA 92553</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Founder</strong>
+    <p class="small">Shane Bundy</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Focus Areas</strong>
+    <p class="small">Food • Hygiene • Clothing • Mentoring</p>
+  </div></div>
+</section>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Through Christ By Faith: A Non Profit Organization</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 84-2101853</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>Provide for the homeless & less fortunate, and empower girls & women through faith‑driven outreach.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>25345 Woodcreek Ct<br>Moreno Valley, CA 92553<br>
+        <strong>Email:</strong> <a href="mailto:contact@throughchristbyfaith.online">contact@throughchristbyfaith.online</a><br>
+        <strong>Phone:</strong> <a href="tel:+14794625625">+1 479 462 5625</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

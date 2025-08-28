@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Through Christ By Faith: A Non Profit Organization</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Contact Through Christ By Faith: A Non Profit Organization. EIN 84-2101853.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Through Christ By Faith: A Non Profit Organization logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container">
+  <div class="split">
+    <div>
+      <h1><span class="upper-strong">THROUGH CHRIST BY FAITH: A NON PROFIT ORGANIZATION</span></h1>
+      <p>For partnerships, volunteering, or assistance, please reach out.</p>
+      <p><strong>Address:</strong><br><span class="upper-strong">THROUGH CHRIST BY FAITH: A NON PROFIT ORGANIZATION</span><br>25345 Woodcreek Ct, Moreno Valley, CA 92553</p>
+      <p><strong>Email:</strong> <a href="mailto:contact@throughchristbyfaith.online">contact@throughchristbyfaith.online</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+14794625625">+1 479 462 5625</a></p>
+    </div>
+    <form class="form card" onsubmit="event.preventDefault(); alert('Form endpoint not configured. Replace with your form service.');">
+      <div class="card-body">
+        <label><span>Full Name</span><input type="text" required></label>
+        <label><span>Email</span><input type="email" required></label>
+        <label><span>Message</span><textarea rows="6" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send</button>
+        <p class="small">Tip: replace this with your form service.</p>
+      </div>
+    </form>
+  </div>
+
+  <section class="section">
+    <h2>Map</h2>
+    <div class="map-embed">
+      <iframe title="Map to our address" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=25345%20Woodcreek%20Ct%2C%20Moreno%20Valley%2C%20CA%2092553&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Through Christ By Faith: A Non Profit Organization</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 84-2101853</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>Provide for the homeless & less fortunate, and empower girls & women through faith‑driven outreach.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>25345 Woodcreek Ct<br>Moreno Valley, CA 92553<br>
+        <strong>Email:</strong> <a href="mailto:contact@throughchristbyfaith.online">contact@throughchristbyfaith.online</a><br>
+        <strong>Phone:</strong> <a href="tel:+14794625625">+1 479 462 5625</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
